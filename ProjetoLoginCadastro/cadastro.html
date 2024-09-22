@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- GOOGLE FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <!-- FIM GOOGLE FONTS -->
+   <!-- BOOTSTRAP ICONS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- FIM BOOTSTRAP ICONS -->
+   <link rel="stylesheet" href="assets/css/cadastro.css">
+   <title>Cadastro Dark/Light Mode</title>
+</head>
+<body>
+    
+    <main id="container">
+        <form id="cadastro_form">
+            <div id="form_header">
+                <h1>Cadastro</h1>
+                <i id="mode_icon" class="bi bi-moon-fill"></i>
+            </div><!-- form_header -->
+
+            <div id="input">
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="bi bi-person-fill"></i>
+                            <input type="text" id="name" name="name">
+                        </div><!-- input-field -->
+                    </label><!-- name -->
+                </div><!-- input-box -->
+
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="bi bi-envelope-fill"></i>
+                            <input type="email" id="email" name="email">
+                        </div><!-- input-field -->
+                    </label><!-- E-mail -->
+                </div><!-- input-box -->
+
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="bi bi-key-fill"></i>
+                            <input type="password" id="password" name="password">
+                        </div><!-- input-field -->
+                    </label><!-- password -->
+                </div><!-- input-box -->
+
+                <div class="input-box">
+                    <label for="confirm_password">
+                        Confirmar Senha
+                        <div class="input-field">
+                            <i class="bi bi-key-fill"></i>
+                            <input type="password" id="confirm_password" name="confirm_password">
+                        </div><!-- input-field -->
+                    </label><!-- confirm_password -->
+                </div><!-- input-box -->
+            </div><!-- input -->
+
+            <button type="submit" id="cadastro_button" onclick="criarAlerta()">
+                Cadastrar
+            </button>
+
+        </form><!-- cadastro_form -->
+    </main><!-- container -->
+
+    <!--mudar fundo-->
+    <script type="text/javascript" src="assets/js/cadastro.js"></script>
+    <!--Confirmação de campos-->
+    <script type="text/javascript" src="assets/js/confirmação_campos.js"></script>
+
+</body>
+</html>

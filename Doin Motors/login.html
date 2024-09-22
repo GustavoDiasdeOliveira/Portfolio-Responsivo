@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <style>
+        /* Adicione um estilo para o efeito de lentidão no botão */
+        .loginBtn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login">
+    <div class="card-login">
+        <img src="img_carros/LOGO.jpeg" alt="icone">
+        <h1>Login</h1>
+
+        <div class="textfield">
+            <label for="user">User</label>
+            <input type="text" id="user" placeholder="User" required>
+        </div><!--textfield_user-->
+
+        <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+        </div><!--textfield_senha-->
+        
+        <!--button_login-->
+        <button id="loginBtn" class="btn-login" onclick="simulateLogin()">Login</button>
+    
+        <footer>
+            <a href="portfolio.html" target="_blank">@Contato:gustavodiasdeoliveira</a>
+           <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p> 
+        </footer>
+            
+
+
+    </div><!--card-login_linha_13-->
+
+</div><!--login_linha_12-->
+
+<script>
+    // Função para simular o processo de login
+    function simulateLogin() {
+        // Obtém os valores dos campos de usuário e senha
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        // Verifica se ambos os campos estão preenchidos
+        if (!user || !senha) {
+            // Se algum campo estiver vazio, exibe um alerta
+            alert("Preencha os campos 'Usuário' e 'Senha' corretamente");
+            return; // Sai da função
+        }
+
+        // Altera o texto do botão de login para indicar que está processando
+        document.getElementById("loginBtn").innerHTML = "Logando...";
+        // Desabilita o botão de login para evitar múltiplos cliques
+        document.getElementById("loginBtn").disabled = true;
+
+        // Aguarda 2 segundos (simulando um processo de login)
+        setTimeout(() => {
+            // Ação de login aqui (substitua este alerta pelo seu código real de login)
+            alert("Login bem-sucedido! Seja bem-vindo!");
+            // Redireciona para a página index.html após o login bem-sucedido
+            window.location.href = "DM.html";
+        }, 2000); // Tempo de espera de 2 segundos (2000 milissegundos)
+    }
+
+    // Adiciona eventos para verificar ao digitar nos campos de usuário e senha
+    document.getElementById("user").addEventListener("input", checkFormValidity);
+    document.getElementById("senha").addEventListener("input", checkFormValidity);
+
+    // Função para verificar se ambos os campos de entrada estão preenchidos
+    function checkFormValidity() {
+        // Obtém os valores dos campos de usuário e senha
+        var user = document.getElementById("user").value;
+        var senha = document.getElementById("senha").value;
+
+        // Obtém o botão de login
+        var loginBtn = document.getElementById("loginBtn");
+
+        // Desabilita o botão se algum campo estiver vazio, habilita caso contrário
+        loginBtn.disabled = !(user && senha);
+    }
+</script>
+
+</body>
+</html>

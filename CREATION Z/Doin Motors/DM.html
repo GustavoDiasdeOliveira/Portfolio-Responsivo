@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DM.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" >
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FIM BOOTSTRAP ICONS-->
+    <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
+    <title>Carros usados, seminovos em Santos</title>
+</head>
+<body>
+    <!--Menus-->
+    <header>
+      <a href="DM.html"><img src="img_carros/logo.png" alt=""></a>
+        
+
+        <nav>
+            <a href="#OFERTAS"><b>OFERTAS</b></a>
+            <a href="#ESTOQUE"><b>ESTOQUE</b></a>
+            <a href="#VENDASEUCARRO"><b>VENDA SEU CARRO</b></a>
+            <a href="#FINANCIE"><b>FINANCIE</b></a>
+            <a href="#ATACADO"><b>ATACADO</b></a>
+            <a href="#SOBRE"><b>SOBRE</b></a>
+            <a href="https://wa.me/551333278001" target="_blank" > <span><i class="bi bi-telephone-fill"> </i><b>(13)3327-8001</b></span></a>
+        </nav><!--fim_nav-->
+    </header><!--fim_header-->
+
+    <!--imagem1-->
+
+    <section class="fundo">
+      
+      <div id="imagem_fundo1">
+          <img src="img_carros/fundo1.png" alt="fundo1">
+      </div><!--fim_imagem_fundo1-->
+      
+      <div class="botao botao-esquerda" onclick="mudarImagem(-1)"> <i class="bi bi-caret-left-fill"></i> </div>
+      <div class="botao botao-direita" onclick="mudarImagem(1)"> <i class="bi bi-caret-right-fill"></i> </div>
+  
+    </section><!--fim_fundo-->
+
+    <!--Qual veículo você está buscando?-->
+    <br>
+    <br>
+    <section id="pesquisa">
+        <h2>Qual veículo você está buscando?</h2>
+        <div class="input-wrapper">
+          <input type="text" id="pesquisar-input" placeholder="Marca ou modelo">
+        </div>
+      
+      <br>
+      <br>
+      <div class="marcas-container">
+      
+        <div class="marcas">
+        <img src="img_carros/bmwlogo.jpeg" alt="Logo">
+        <p>BMW</p>
+      </div><!--fim_marcas1-->
+      
+      <div class="marcas">
+        <img src="img_carros/Cherry.jpg" alt="Logo">
+        <p>Cherry</p>
+      </div><!--fim_marcas2-->
+    
+      <div class="marcas">
+        <img src="img_carros/chevroletlogo.jpeg" alt="Logo">
+        <p>Chevrolet</p>
+      </div><!--fim_marcas3-->
+
+      <div class="marcas">
+        <img src="img_carros/fiatlogo.png" alt="Logo">
+        <p>Fiat</p>
+      </div><!--fim_marcas4-->
+
+      <div class="marcas">
+        <img src="img_carros/suzuki logo.png" alt="Logo">
+        <p>Suzuki</p>
+      </div><!--fim_marcas5-->
+
+      <div class="marcas">
+        <img src="img_carros/honda logo.jpeg" alt="Logo">
+        <p>Honda</p>
+      </div><!--fim_marcas6-->
+      
+      <div class="marcas">
+        <img src="img_carros/logo hyundai.png" alt="Logo">
+        <p>Hyundai</p>
+      </div><!--fim_marcas7-->
+
+      <div class="marcas">
+        <img src="img_carros/mercedes.jpeg" alt="Logo">
+        <p>Mercedes</p>
+      </div><!--fim_marcas8-->
+
+      <div class="marcas">
+        <img src="img_carros/renault logo.jpeg" alt="Logo">
+        <p>Renault</p>
+      </div><!--fim_marcas9-->
+
+      <div class="marcas">
+        <img src="img_carros/volkswagen.png" alt="Logo">
+        <p>Volkswagen</p>
+      </div><!--fim_marcas10-->
+
+      <div class="marcas">
+        <img src="img_carros/porsche logo.png" alt="Logo">
+        <p>Porsche</p>
+      </div><!--fim_marcas11-->
+
+      
+
+    </div><!--fim_marcas_container-->
+    <!--fim_Qual_veículo_você está buscando? -->
+
+    <br>
+    <!--container_segunda linha-->
+    <div class="marcas-container">
+      
+      <div class="marcas">
+      <img src="img_carros/minilogo.jpeg" alt="Logo">
+      <p>Mini</p>
+    </div><!--fim_marcas1-->
+    
+    <div class="marcas">
+      <img src="img_carros/volvologo.jpeg" alt="Logo">
+      <p>Volvo</p>
+    </div><!--fim_marcas2-->
+  
+    </section><!--fim_section-->
+    <!--Ultimas novidades-->
+<br>
+<br>
+
+<div class="container">
+  <h1>Últimas novidades</h1>
+  <br>
+  <div class="card">
+      <div class="details">
+          <div class="image">
+              <img src="img_carros/Caoa Chery Tiggo.png" alt="Caoa Chery Tiggo">
+          </div>
+          <h2><img src="img_carros/Cherry.jpg" alt="Caoa Chery Logo"> Caoa Chery <span>Tiggo</span></h2>
+          <p><b>TIGGO 8 PHEV 1.5 TCI PLUG-IN HYBRID DHT</b></p>
+          <p><i class="bi bi-calendar3"></i> Ano: 2022/2023 <span> <i class="bi bi-speedometer2"></i>24.000 km</span></p>
+          <br><br>
+          <div class="quebra">
+              <p>De R$ 229.900  <span>por R$ </span></span><span1><b>219.900</b></span1></span></p>
+              <button>Ver Mais</button>
+          </div><!--quebra-->
+      </div><!--details-->
+  </div><!--card-->
+
+  <div class="card">
+      <div class="details">
+          <div class="image">
+              <img src="img_carros/Hyundai Creta.png" alt="Hyundai Creta">
+          </div>
+          <h2><img src="img_carros/logohyundai.png" alt="Hyundai Logo"> Hyundai <span>Creta</span></h2>
+          <p><b>1.0 TGDI FLEX PLATINUM AUTOMÁTICO</b></p>
+          <p><i class="bi bi-calendar3"></i> Ano: 2021/2022 <span> <i class="bi bi-speedometer2"></i>35.200 km</span></p>
+          <br><br>
+          <div class="quebra">
+              <p>De R$ 152.900  <span>por R$ </span></span><span1><b>135.900</b></span1></span></p>
+              <button>Ver Mais</button>
+          </div><!--quebra-->
+      </div><!--details-->
+  </div><!--card-->
+
+  <div class="card">
+      <div class="details">
+          <div class="image">
+              <img src="img_carros/Volvo XC40.png" alt="Volvo XC40">
+          </div>
+          <h2><img src="img_carros/logoyusahi.png" alt="Volvo Logo"> Volvo <span>XC40</span></h2>
+          <p><b>2.0 T5 GASOLINA MOMENTUM AWD GEARTRONIC</b></p>
+          <p><i class="bi bi-calendar3"></i> Ano: 2018/2019 <span> <i class="bi bi-speedometer2"></i>32.000 km</span></p>
+          <br><br>
+          <div class="quebra">
+              <p>De R$ 199.900  <span>por R$ </span></span><span1><b>179.900</b></span1></span></p>
+              <button>Ver Mais</button>
+          </div><!--quebra-->
+      </div><!--details-->
+  </div><!--card-->
+</div><!--container-->
+
+<!--button_novidades-->
+  <button id="novidades_button">Veja todas as novidades</button>
+
+    <!--cartoes 2-->
+<div id="container2">
+  <div id="card">
+    <div id="details">
+      <div class="icones">
+        <i class="bi bi-coin"></i>
+      </div>
+      <h2>Compramos seu veículo!</h2>
+      <p><b>Compramos seu veículo sem </b></p>
+      <p><b>burocracia e com agilidade.</b></p>
+      <div id="contatos">   
+        <button id="descricao">Entre em contato</button>
+      </div>
+    </div><!--details-->
+  </div><!--card1-->
+
+  <div id="card">
+    <div class="details">
+      <div class="icones">
+        <i class="bi bi-car-front-fill"></i>
+      </div>
+      <h2>Avalie seu usado</h2>
+      <p><b>Faça a avaliação do seu carro online, </b></p>
+      <p><b>no conforto da sua casa.</b></p>
+      <div id="contatos">   
+        <button id="descricao">Avalie agora</button>
+      </div>
+    </div><!--details-->
+  </div><!--card2-->
+
+  <div id="card">
+    <div id="details">
+      <div class="icones">
+        <i class="bi bi-coin"></i>
+      </div>
+      <h2>Financie seu sonho</h2>
+      <p><b>Trabalhamos com as principais financeiras, </b></p>
+      <p><b> isso garante melhores taxas para você!</b></p>
+      <div id="contatos">   
+        <button id="descricao">Faça uma simulação</button>
+      </div> 
+    </div><!--details-->
+  </div><!--card3-->
+</div><!--container-->
+<div id="espacamentos">
+  <br>
+  <br>
+</div>
+
+
+<!--Comentarios-->
+<div id="container3">
+  <br><br>
+  <h1 id="nossocliente">O que nossos clientes dizem sobre nós</h1>
+  <br>
+  <div class="card-container">
+    <div class="card3">
+      <div class="details3">
+        <p><b>“Melhor lugar do mundo ... nunca 
+        nos sentimos tão bem ao comprar 
+        um automóvel. Parabéns pela 
+        simpatia e eficiência, equipe nota
+        Dez. Sai com a sensação de estar 
+        casando ,  e o melhor com tapete 
+        vermelho e tudo . Deus esconde o 
+        fim no começo! Nunca mais iremos 
+        pisar em outra loja , seremos fiéis 
+        a vcs! Que Deus vos abençoe grandemente... Muito sucesso.”</b></p>
+        <br><br>
+        <div id="fotoComentario">
+          <img src="pessoa_icone.png">
+          <p><b>Amanda Vieira</b></p>
+        </div>
+      </div><!--details3-->
+    </div><!--card1-->
+
+    <div class="card3">
+      <div class="details3">
+        <p><b>“Comprar um carro é bom demais! 
+        Mas, comprar um carro na Doin, é 
+        incomparável! Foi maravilhosa a
+        experiência, a felicidade de ser
+        acolhida, mimada, tratada como
+        especial, será inesquecível, ameeei
+        tuuudoo!”</b></p>
+        <div id="linh">
+          <br><br><br><br><br><br><br>
+        </div>
+        <div id="fotoComentario">
+          <img src="pessoa_icone.png">
+          <p><b>Ana Detter</b></p>
+        </div>
+      </div><!--details3-->
+    </div><!--card2-->
+
+    <div class="card3">
+      <div class="details3">
+        <p><b>“Compro carro há quase 20 anos, já
+        comprei em diversas
+        concessionárias, e posso dizer, a
+        experiência de comprar com a Doin
+        Motors é única. Desde a primeira
+        consulta, até o pós venda, eles são
+        impecáveis. O mundo está
+        evoluindo, eles entenderam e
+        evoluíram nesse meio começo
+        nenhuma outra loja evoluiu. Vale a
+        pena conferir! vocês são nota mil!”</b></p>
+          <br><br>
+        <div id="fotoComentario">
+          <img src="pessoa_icone.png">
+          <p><b>Miguel Lara</b></p>
+        </div>
+      </div><!--details3-->
+    </div><!--card3-->
+  </div><!--card-container-->
+</div><!--container-->
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

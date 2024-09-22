@@ -1,0 +1,412 @@
+/*MENU INICIAL*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header img {
+    margin-left: 40px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: silver;
+    height: 6vw;
+    box-shadow: 2px 10px 20px rgb(146, 146, 146);
+    z-index: 999; /* ajuste o z-index conforme necessário */
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    margin-right: 36px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+header nav a:hover {
+    color: #E0353B;
+}
+
+header nav a span {
+    color: rgb(134, 0, 0);
+    transition: color 0.2s;
+}
+
+header nav a:hover span {
+    color: rgb(21, 172, 41);
+}
+
+/*FUNDO*/
+.fundo {
+    position: relative;
+    width: 100%; /* Para ocupar toda a largura da tela */
+    height: 60vh; /* Para ocupar toda a altura da tela */
+    overflow: hidden; /* Para garantir que a imagem não estenda além da seção */
+}
+
+#imagem_fundo1 img {
+    margin-top: 80px;
+    width: 100%; /* Para garantir que a imagem ocupe toda a largura da seção */
+    height: auto; /* Para manter a proporção da imagem */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #E0353B;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 999; /* Ajuste o z-index para garantir que os botões fiquem acima das outras camadas */
+}
+
+
+.botao-esquerda {
+    left: 0;
+    margin-top: 40px;
+}
+
+.botao-direita {
+    right: 0;
+    margin-top: 40px;
+}
+
+
+
+/*PESQUISAS*/
+
+#pesquisa h2{
+    padding: 0 30px;
+    text-align: left;
+}
+
+#pesquisa {
+    margin-bottom: 30px; /* Adicionando margem inferior para espaçamento */
+}
+  
+  .input-wrapper {
+    padding: 0 20px;
+    position: relative;
+    
+  }
+  
+  #pesquisar-input {
+    box-shadow: 0 0 10px #686868;
+    font-size: 15px;
+    margin: 0 20px;
+    padding: 10px 85px 10px 10px; /* Adicionando espaço interno para o texto e o ícone */
+    border:2px solid #818181; /* Adicionando borda sólida */
+    border-radius: 8px ; /* Adicionando bordas arredondadas */
+    background-image: url('img_carros/lupa.png'); /* Definindo a imagem de lupa como plano de fundo */
+    background-repeat: no-repeat; /* Evitando a repetição do plano de fundo */
+    background-position: right 10px center; /* Posicionando a imagem à direita com espaçamento */
+    background-size: 20px 20px; /* Definindo o tamanho da imagem */
+    outline: none;
+}
+
+.marcas-container {
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+
+}
+
+.marcas {
+    box-shadow: 0 0 3px #686868;
+    margin-left: 20px;
+    width: 80px; /* Largura da marca */
+    border: 2px solid #818181; /* Borda da marca */
+    border-radius: 12px; /* Borda arredondada */
+    padding: 8px; /* Espaçamento interno */
+    align-items: center;
+    display: flex; /* Adiciona display flex */
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.marcas img {
+    margin-bottom: 8px; /* Espaço entre a imagem e o texto */
+    height: 40px;
+    width: 40px; /* Largura da imagem */
+}
+
+.marcas:hover{
+    box-shadow: 0 0 8px #E0353B;
+    border: 2px solid #E0353B;
+    color: #E0353B;
+}
+
+
+.marcas p {
+    margin: 0; /* Remove margem padrão do parágrafo */
+}
+
+
+
+/*Imagens*/
+
+.container {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    margin: 10px; /* Espaçamento entre os cartões */
+    width: 300px;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid rgb(155, 155, 155);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgb(165, 165, 165);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #686868;
+    position: absolute; /* Remove o título do fluxo do documento */
+}
+
+h2 {
+    text-align: center;
+    color: #686868;
+}
+
+h2 span{
+    color: #000000;
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+}
+
+.details p {
+    color: #000000;
+}
+
+
+
+p span {
+    margin-left: 50px; /* Adiciona espaço à esquerda do segundo valor */
+}
+
+.quebra span1{
+    color: #E0353B;
+    font-size: 20px;
+}
+
+
+p i {
+    margin-right: 5px; /* Adiciona espaço à direita dos ícones */
+}
+
+.quebra{
+    background-color: #f5f3f3;
+    border: 1px solid silver;
+    
+}
+
+button {
+    background-color: #ffffff;
+    color: #E0353B;
+    border: none;
+    align-items: center;
+    margin: 10px auto; /* Centraliza horizontalmente */
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 1px solid #E0353B;
+    cursor: pointer;
+    font-size: 17px;
+    display: block;
+    transition: .3s;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    color: #000000;
+    background-color: #E0353B;
+}
+
+h2 img {
+    margin-left: 10px; /* Ajusta o espaçamento entre a logo e o texto */
+    width: 40px;
+    height: 40px; /* Garante que a altura seja ajustada automaticamente */
+    display: inline-block; /* Garante que a imagem seja tratada como um bloco em linha */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+}
+
+#novidades_button {
+    margin-top: 25px; /* Ajusta a margem para posicionar o botão abaixo dos cards e centralizado horizontalmente */
+    display: block; /* Garante que o botão seja exibido como um bloco */
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #E0353B;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+}
+
+#novidades_button:hover {
+    transform: scale(1.05);
+    color: #000000;
+    background-color: #E0353B;
+}
+
+
+#container2 {
+    background-color: #61616111;
+    margin-top: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #card {
+    margin: 10px; /* Espaçamento entre os cartões */
+    width: 350px;
+    height: 360px;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid silver;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .icones {
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgb(155, 155, 155);
+  }
+
+  #descricao {
+    margin-top: 25px; /* Ajusta a margem para posicionar o botão abaixo dos cards e centralizado horizontalmente */
+    display: block; /* Garante que o botão seja exibido como um bloco */
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+}
+
+#espacamentos{
+    background-color: #61616111;
+}
+
+
+/*COMENTARIOS CLIENTES*/
+#container3 {
+  background-color: silver;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card3 {
+  margin: 10px; /* Espaçamento entre os cartões */
+  width: 350px;
+  height: 407px;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid silver;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#nossocliente{
+    margin-top: 35px;
+    color: #000000;
+}
+
+#fotoComentario {
+    display: flex;
+    align-items: center;
+}
+
+#fotoComentario img {
+    width: 70px;
+    border-radius: 50px;
+    border: 3px solid #9c9c9c;
+    background-color: rgb(209, 207, 207);
+    margin-right: 10px;
+}
+
+#fotoComentario p {
+    display: inline-block;
+    color: rgb(85, 85, 85);
+    margin-right: 10px;
+    flex: 1;
+}
+
+.details3 {
+    margin-top: 20px;
+    padding: 0 40px; /* Padding nas laterais */
+    font-size: 16px;
+}
+
+.details3 p {
+    color: #818181;
+    text-align: justify; /* Justificar o texto */
+    line-height: 1.3; /* Define o espaçamento entre as linhas */
+}
+
+#linh{
+    height: 120px;
+}
+
+
+
+
