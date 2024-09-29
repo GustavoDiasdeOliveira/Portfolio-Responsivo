@@ -596,7 +596,6 @@ section.sobre img{
 
 
 /*ESTILO PROJETOS*/
-
 .card-wrapper {
     margin: 0 60px 35px;
     padding: 20px 10px;
@@ -717,7 +716,7 @@ section.formulario{
 
 form{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     gap: 10px;
     display: flex;
     justify-content: center;
